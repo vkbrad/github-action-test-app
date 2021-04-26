@@ -7,8 +7,11 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: vkbrad/github-action-changelog@v1.1
+      uses: vkbrad/github-action-changelog@v1.3
       with:
+        githubToken: ${{ secrets.GITHUB_TOKEN }}
+        path: 'vkbrad'
+        name: 'github-action-test-app'
         who-to-greet: 'Mona the Octocat'
     # Use the output from the `hello` step
     - name: Get the output time
