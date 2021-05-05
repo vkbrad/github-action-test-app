@@ -10,9 +10,8 @@ jobs:
       uses: vkbrad/github-action-changelog@v1.5
       with:
         githubToken: ${{ secrets.GITHUB_TOKEN }}
-        path: 'vkbrad'
-        name: 'github-action-test-app'
-        who-to-greet: 'Mona the Octocat'
+        org: 'vkbrad'
+        repo: 'github-action-test-app'
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
