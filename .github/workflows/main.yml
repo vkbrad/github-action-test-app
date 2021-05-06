@@ -7,11 +7,9 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: vkbrad/github-action-changelog@v1.6
+      uses: vkbrad/github-action-changelog@v1.7
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        org: 'vkbrad'
-        repo: 'github-action-test-app'
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
