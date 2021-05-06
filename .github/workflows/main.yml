@@ -9,7 +9,7 @@ jobs:
       id: hello
       uses: vkbrad/github-action-changelog@v1.6
       with:
-        githubToken: ${{ secrets.GITHUB_TOKEN }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
         org: 'vkbrad'
         repo: 'github-action-test-app'
     # Use the output from the `hello` step
