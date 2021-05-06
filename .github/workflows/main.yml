@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: vkbrad/github-action-changelog@v1.5
+      uses: vkbrad/github-action-changelog@v1.6
       with:
         githubToken: ${{ secrets.GITHUB_TOKEN }}
         org: 'vkbrad'
